@@ -15,6 +15,8 @@
 		FF2FF5E12AD7F13B00689631 /* SwiftUIVieww.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FF5E02AD7F13B00689631 /* SwiftUIVieww.swift */; };
 		FF2FF5E52ADB2D1D00689631 /* forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FF5E42ADB2D1D00689631 /* forms.swift */; };
 		FF2FF5E72ADBEC5300689631 /* moodboard2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FF5E62ADBEC5300689631 /* moodboard2.swift */; };
+		FF2FF5E92ADD151700689631 /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF2FF5E82ADD151700689631 /* Tajawal-Medium.ttf */; };
+		FF2FF5EC2ADD20C100689631 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FF5EB2ADD20C100689631 /* ImageModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,9 @@
 		FF2FF5E02AD7F13B00689631 /* SwiftUIVieww.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVieww.swift; sourceTree = "<group>"; };
 		FF2FF5E42ADB2D1D00689631 /* forms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forms.swift; sourceTree = "<group>"; };
 		FF2FF5E62ADBEC5300689631 /* moodboard2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodboard2.swift; sourceTree = "<group>"; };
+		FF2FF5E82ADD151700689631 /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Medium.ttf"; sourceTree = "<group>"; };
+		FF2FF5EA2ADD15CB00689631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF2FF5EB2ADD20C100689631 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 		FF2FF5C42AD7EF8E00689631 = {
 			isa = PBXGroup;
 			children = (
+				FF2FF5E82ADD151700689631 /* Tajawal-Medium.ttf */,
 				FF2FF5CF2AD7EF8E00689631 /* BASS */,
 				FF2FF5CE2AD7EF8E00689631 /* Products */,
 			);
@@ -59,12 +65,14 @@
 		FF2FF5CF2AD7EF8E00689631 /* BASS */ = {
 			isa = PBXGroup;
 			children = (
+				FF2FF5EA2ADD15CB00689631 /* Info.plist */,
 				FF2FF5D02AD7EF8E00689631 /* BASSApp.swift */,
 				FF2FF5D22AD7EF8E00689631 /* ContentView.swift */,
 				FF2FF5E62ADBEC5300689631 /* moodboard2.swift */,
 				FF2FF5E42ADB2D1D00689631 /* forms.swift */,
 				FF2FF5E02AD7F13B00689631 /* SwiftUIVieww.swift */,
 				FF2FF5DE2AD7F12300689631 /* texxxt.swift */,
+				FF2FF5EB2ADD20C100689631 /* ImageModifier.swift */,
 				FF2FF5D42AD7EF8F00689631 /* Assets.xcassets */,
 				FF2FF5D62AD7EF8F00689631 /* Preview Content */,
 			);
@@ -138,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF2FF5D82AD7EF8F00689631 /* Preview Assets.xcassets in Resources */,
+				FF2FF5E92ADD151700689631 /* Tajawal-Medium.ttf in Resources */,
 				FF2FF5D52AD7EF8F00689631 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF2FF5D32AD7EF8E00689631 /* ContentView.swift in Sources */,
+				FF2FF5EC2ADD20C100689631 /* ImageModifier.swift in Sources */,
 				FF2FF5D12AD7EF8E00689631 /* BASSApp.swift in Sources */,
 				FF2FF5E52ADB2D1D00689631 /* forms.swift in Sources */,
 				FF2FF5E72ADBEC5300689631 /* moodboard2.swift in Sources */,
@@ -290,6 +300,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BASS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BASS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,6 +329,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BASS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BASS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

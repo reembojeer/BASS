@@ -9,43 +9,28 @@ struct moodboard2: View {
     //@binding var arrayImages: [Images]
     var body: some View {
         
-       
-        
-//        if let selectedPhotoData,
-//        let image = UIImage(data: selectedPhotoData) {
-//
-//        Image(uiImage: image)
-//            .resizable()
-//            .scaledToFill()
-//            .clipped()
-//        }
         ZStack{
-            
+            SwiftUIVieww()
+
            
             
             if let selectedPhotoData {
-                
-                selectedPhotoData
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
+                GeometryReader { proxy in
+                    selectedPhotoData
+                        .resizable()
+                        .frame(width: 300, height: 300)
+                        .scaledToFit()
+                        .clipShape(Rectangle())
+                        .modifier(ImageModifier(contentSize: CGSize(width: proxy.size.width, height: proxy.size.height)))
+                }
+                   
             }
-            SwiftUIVieww()
         }
         
       
         VStack{
             
-            
-//                if let selectedPhotoData {
-//
-//                    selectedPhotoData
-//                        .resizable()
-//                        .scaledToFit()
-//                        .frame(width: 300, height: 300)
-//                       }
-                
-                
+    
                 HStack (spacing: 50) {
                     
                 

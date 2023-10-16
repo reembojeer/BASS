@@ -32,35 +32,40 @@ struct forms: View {
                 VStack{
                     VStack(alignment: .trailing){
                         Text("اضف لقائمتك")
-                            .font(.title)
+                           
+                            .font(.custom("Tajawal", size: 25))
                             .bold()
                             .padding(.bottom, 25)
                         LazyVGrid(columns: columns, spacing: 10) {
                             ForEach(0..<buttonTitles.count) { index in
-                                Button(action: {
-                                    if selectedButtons.contains(index) {
-                                        selectedButtons.remove(index)
-                                    } else {
-                                        selectedButtons.insert(index)
-                                    }
-                                }) {
-                                    Text(buttonTitles[index])
-                                        .padding(.vertical, 7.0)
-                                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                        .background(selectedButtons.contains(index) ? Color.c : Color.gray)
-                                        .foregroundColor(.white)
-                                        .font(.title3)
-                                        .cornerRadius(6)
-                                        
-                                        
-                                    
-                                }
-                            }
-                        }
+                                                    Button(action: {
+                                                        if selectedButtons.contains(index) {
+                                                            selectedButtons.remove(index)
+                                                        } else {
+                                                            selectedButtons.insert(index)
+                                                        }
+                                                    }) {
+                                                        Text(buttonTitles[index])
+                                                            .padding([.top, .bottom, .trailing], 5.0)
+                                                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                                            
+                                                            .background(
+                                                                RoundedRectangle(cornerRadius: 6)
+                                                                    .stroke(selectedButtons.contains(index) ? Color.c : Color.gray, lineWidth: 2)
+                                                            )
+                                                            .foregroundColor(selectedButtons.contains(index) ? Color.c : Color.gray) // Set the text and border color
+                                                            .font(.custom("Tajawal", size: 15))
+                                                            
+                                                            .cornerRadius(6)
+                                                    }
+                                                }
+                                            }
+
                         .padding(.bottom, 25)
         
                         Text("اسم المناسبة")
                             .bold()
+                            .font(.custom("Tajawal", size: 25))
                             .font(.headline)
                             TextField("", text: $textInput)
                             .frame(height: 20) // Set the desired height here
@@ -74,6 +79,7 @@ struct forms: View {
                             .padding(.bottom, 25)
                         
                         Text("تاريخ مناسبتك")
+                            .font(.custom("Tajawal", size: 20))
                             .bold()
                             .font(.headline)
                         DatePicker("", selection: $selectedDate, in: Date()..., displayedComponents: .date)
@@ -90,6 +96,8 @@ struct forms: View {
                    
                     NavigationLink(destination: texxxt()) {
                         Text("التالي")
+                            .font(.custom("Tajawal", size: 25))
+                            .bold()
                             .frame(width: 200, height: 50)
                             .background(Color.c) // Set the background color to red
                             .foregroundColor(.white) // Set the text color to white
@@ -101,7 +109,8 @@ struct forms: View {
                 
             }
            
-            .navigationTitle("خطط لمناسبتك")
+            .navigationTitle(Text("خطط لمناسبتك"))
+            .font(.custom("Tajawal", size: 15))
             .navigationBarTitleDisplayMode(.inline)
             
         }
